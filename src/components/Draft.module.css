@@ -1,0 +1,42 @@
+.container {
+    background-color: #060616;
+    padding: 20px;
+    width: 50%; 
+    margin: 0 auto;
+}
+
+.listItem {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.link, .sendButton {
+    background-color: lightblue;
+    color: black;
+    padding: 7px 12px; 
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.sendButton {
+    background-color: #FF4F4B;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.sendButton:hover, .link:hover {
+    opacity: 0.8;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+}
+

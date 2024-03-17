@@ -1,0 +1,76 @@
+body {
+    background-color: #060616;
+}
+
+input {
+    background-color: white;
+    width: 60%;
+    margin-left: 18.5%;
+    font-size: 15px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    border-color: black;    
+}
+
+.from {
+    margin-top: 50px;
+}
+.to{
+    margin-top: 10px;
+}
+
+textarea {
+    background-color: white;
+    width: 60%;
+    height: 300px;
+    margin-left: 18.5%;
+    padding: 16px 16px;
+    border-radius: 25px;
+    border-color: black;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+textarea::placeholder {
+    text-align: center; 
+    vertical-align: middle; 
+    line-height: normal; 
+    opacity: 3; 
+}
+
+input:focus-within {
+    outline: none;
+    border-color: #5bd183;
+    border-width: 3px;
+}
+
+textarea:focus-within {
+    outline: none;
+    border-color: #5bd183;
+    border-width: 3px;
+}
+
+button {
+    border-radius: 10px;
+    border-color: black;
+    font-size: 22px;
+    padding: 10px 18px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.save {
+    background-color: rgb(156, 235, 82);
+    margin-left: 28%;
+}
+.sendcompose {
+    background-color: #FF4F4B;
+    margin-left: 30%;
+}
+
+
+
+button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
