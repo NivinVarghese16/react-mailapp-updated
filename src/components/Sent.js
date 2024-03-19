@@ -22,19 +22,23 @@ const Sent = () => {
     <div className={SentCSS.container}>
       <button onClick={() => navigate('/compose')} className={SentCSS.button} type="button">Compose</button>
       <div className={SentCSS.box}>
-        {sentMessages.map((message, index) => (
-          <div key={index} className={SentCSS.email}>
-            <p>Mail: {index + 1}</p>
-            <p>From: {message.from}</p>
-            <p>To: {message.to}</p>
-            <p>Message: {message.message}</p>
-          </div>
-        ))}
+        {sentMessages.length === 0 ? (
+          <p className={SentCSS.empty}>No sent mails yet</p>
+        ) : (
+          sentMessages.map((message, index) => (
+            <div key={index} className={SentCSS.email}>
+              <p>{index + 1}. Message: {message.message}</p>
+              <p>From: {message.from}</p>
+              <p>To: {message.to}</p>
+            </div>
+          ))
+        )}
       </div>
-      <button className={SentCSS.clearButton} onClick={handleClearLocalStorage}>Clear</button>
+      <button className={SentCSS.clearButton} onClick={handleClearLocalStorage}>Reset</button>
     </div>
   );
 };
 
 export default Sent;
+
 
